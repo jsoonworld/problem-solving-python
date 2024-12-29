@@ -1,5 +1,17 @@
 input = "abadabac"
 
+# def find_not_repeating_first_character(string):
+#     arr = [0] * 26
+#
+#     for char in string:
+#         arr[ord(char) - ord('a')] += 1
+#
+#     for char in string:
+#         if arr[ord(char) - ord('a')] == 1:
+#             return char
+#
+#     return "_"
+
 def find_not_repeating_first_character(string):
     arr = [0] * 26
 
@@ -9,7 +21,6 @@ def find_not_repeating_first_character(string):
     for char in string:
         if arr[ord(char) - ord('a')] == 1:
             return char
-
     return "_"
 
 
