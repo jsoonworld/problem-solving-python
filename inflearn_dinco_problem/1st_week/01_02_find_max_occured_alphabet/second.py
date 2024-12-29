@@ -1,11 +1,30 @@
+# def find_max_occurred_alphabet(string):
+#
+#     occurrence_alphabet_array = [0] * 26
+#     for char in string:
+#         if not char.isalpha():
+#             continue
+#         arr_index = ord(char) - ord('a')
+#         occurrence_alphabet_array[arr_index] += 1
+#
+#     max_occurrence = 0
+#     max_alphabet_index = 0
+#     for index in range(len(occurrence_alphabet_array)):
+#         alphabet_occurrence = occurrence_alphabet_array[index]
+#         if alphabet_occurrence > max_occurrence:
+#             max_occurrence = alphabet_occurrence
+#             max_alphabet_index = index
+#
+#     return chr(max_alphabet_index + ord('a'))
+
 def find_max_occurred_alphabet(string):
 
     occurrence_alphabet_array = [0] * 26
     for char in string:
-        if not char.isalpha():
+        if not char.isalphat():
             continue
-        arr_index = ord(char) - ord('a')
-        occurrence_alphabet_array[arr_index] += 1
+        array_index = ord(char) - ord('a')
+        occurrence_alphabet_array[array_index] += 1
 
     max_occurrence = 0
     max_alphabet_index = 0
@@ -14,8 +33,9 @@ def find_max_occurred_alphabet(string):
         if alphabet_occurrence > max_occurrence:
             max_occurrence = alphabet_occurrence
             max_alphabet_index = index
-
     return chr(max_alphabet_index + ord('a'))
+
+
 
 
 
