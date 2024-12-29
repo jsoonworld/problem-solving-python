@@ -1,3 +1,12 @@
+# def find_max_plus_or_multiply(array):
+#     plus_or_multiply_sum = 0
+#     for number in array:
+#         if number <= 1 or plus_or_multiply_sum <= 1:
+#             plus_or_multiply_sum += number
+#         else:
+#             plus_or_multiply_sum *= number
+#     return plus_or_multiply_sum
+
 def find_max_plus_or_multiply(array):
     plus_or_multiply_sum = 0
     for number in array:
