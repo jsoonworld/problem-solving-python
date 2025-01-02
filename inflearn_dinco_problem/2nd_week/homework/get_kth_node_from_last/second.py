@@ -29,6 +29,21 @@ class LinkedList:
 
         return second
 
+    def get_kth_node_from_last(self, k):
+        first = self.head
+        second = self.head
+
+        for i in range(k):
+            if first is None:
+                return None
+            first = first.next
+
+        while first is not None:
+            first = first.next
+            second = second.next
+
+        return second
+
 
 linked_list = LinkedList(6)
 linked_list.append(7)
