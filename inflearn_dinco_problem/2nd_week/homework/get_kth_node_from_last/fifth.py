@@ -14,6 +14,19 @@ class LinkedList:
             cur = cur.next
         cur.next = Node(value)
 
+    # def get_kth_node_from_last(self, k):
+    #     slow = self.head
+    #     fast = self.head
+    #
+    #     for i in range(k):
+    #         fast = fast.next
+    #
+    #     while fast is not None:
+    #         slow = slow.next
+    #         fast = fast.next
+    #
+    #     return slow
+
     def get_kth_node_from_last(self, k):
         slow = self.head
         fast = self.head
@@ -23,9 +36,10 @@ class LinkedList:
 
         while fast is not None:
             slow = slow.next
-            fast = fast.next
+            fast.next
 
         return slow
+
 
 
 linked_list = LinkedList(6)
